@@ -1,0 +1,15 @@
+read side1
+read side2
+read side3
+#echo $side1
+#echo $side2
+#echo $side3
+if [ $side1 -ne $side2 -a $side1 -ne $side3 -a $side2 -ne $side3 ]
+then
+    echo "SCALENE"
+elif [ $side1 -eq $side2 -a $side1 -eq $side3 -a $side2 -eq $side3 ]
+then
+    echo "EQUILATERAL"
+else
+    echo "ISOSCELES"
+fi
